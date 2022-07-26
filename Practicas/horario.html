@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: skyblue;        }
+
+        thead{
+            color: rebeccapurple;
+        }
+
+        tbody{
+            color: blue;
+        }
+
+        tfoot{
+            color: red;
+        }
+
+        table, th, td{
+            border: 1px solid rgb(255, 251, 8);
+        }
+
+        th{
+            font-size: 30px;
+            background-color: burlywood;
+        }
+
+        td{
+            font-size: 20px;
+            background-color: antiquewhite;
+        }
+        
+        h3{
+            font-size: 35px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+    
+    <center><h3 style="color: rgb(4, 119, 4)">Elemento thead, tbody y tfoot en una tabla</h3></center>
+
+    <center>
+    <table>
+        <thead>
+            <tr>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">INTRO-WEB-2</td> <!--rowspan sirve para combinar columnas-->
+                <td>INTRO-WEB-3</td>
+                <td>INTRO-WEB-4</td>
+                <td rowspan="2">INTRO-WEB-5</td>
+                <td rowspan="2">INTRO-WEB-6</td>
+            </tr>
+            <tr>
+                <td>EE-PW2</td>
+                <td>EE-40 Entrevistas</td>
+            </tr>
+            <tr>
+                <td align="center" colspan="5">Break</td>  <!--colspan sirve para combinar filas-->
+            </tr>
+            <tr>
+                <td rowspan="2">INTRO-WEB-3</td>
+                <td>INTRO-WEB-4</td>
+                <td rowspan="2">INTRO-WEB-5</td>
+                <td>SSM-WT</td>
+                <td>SSM-ISE</td>
+            </tr>
+        
+            <tr>
+                <td>SA-EE3</td>
+                <td>INTRO-WEB-6</td>
+                <td>BSM-CH2</td>
+            </tr>
+        </tbody>
+    </table>
+    </center>
+
+</body>
+</html>
